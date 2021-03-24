@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block content %}
+
+    {% if query %}
+        <h1>Listing containing "{{query}}"</h1>
+                <h3>
+                    {% with results.count as total_results %}
+                    Found {{total_results}} result{{total_results|pluralize}}
+                    {% endwith %}
+                </h3>
+            {% for c in results %}
+                <a href="{% url 'detail' c.id %}" style="color: black;">
+                    <div class="row">
+                        {% comment %} <div class="col s2">
+                            {% for photo in c.photo_set.all %}
+                                <img src="{{photo.url}}" class="responsive-img card-panel">
+                            {% endfor %}
+                        </div> {% endcomment %}
+                        <div class="col s10">
+                            <div class="card">
+                                <div class="card-content">
+                                    <span class="card-title">{{c.name}}</span>
+                                    <p>location: {{c.location}}</p>
+                                    <p>{{c.description}}</p>
+                                    <p>{{c.price}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            {% empty %}
+                <h4>There are no results for your query</h4>
+            {% endfor %}
+    {% else %}
+        <h2>NO QUERY: ERROR</h2>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Home
+{% endblock  %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col search">
+                <div class="searchContent">
+                    <p class="rightColHeader">Sharing is Caring</p>
+                    <p class="rightColSubHeader">Rent unique items from trusted hosts around the world</p>
+                    <form class="d-flex" action="{% url 'search' %}" method="GET">
+                        <input class="form-control" id="searchBar" name="search" type="search" placeholder="Bikes, drones, toys..." aria-label="Search">
+                        <button class="btn btn-outline-success searchBtn" type="submit">Search</button>
+                    </form> 
+                </div>
+            </div>
+            <div class="col images">
+                <div id="carousel-images" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner inner-images">
+                        <div class="carousel-item active">
+                        <img src="{% static 'images/drone.jpg' %}" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="{% static 'images/bike.jpg' %}" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="{% static 'images/party.jpg' %}" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-images"  data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-images"  data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mid-content">
+    <p class="mid-content-header">Rent or List an item </p>
+    </div>
+
+    <div class="container-fluid iconContainer">
+        <div class="row">
+            <div class="col access">
+                <div class="icon-container">
+                    <i class="fas fa-magic" id="icons"></i>
+                </div>
+                <div class="icon-title">
+                    <p class="icon-header">Access More</p>
+                    <p class="icon-body">Pursue passions. Get things done.</p>
+                </div>
+            </div>
+            <div class="col access">
+                <div class="icon-container">
+                    <i class="fas fa-piggy-bank" id="icons"></i>
+                </div>
+                <div class="icon-title">
+                    <p class="icon-header">Save Money</p>
+                    <p class="icon-body">Buy less. Rent for a fraction of the cost.</p>
+                </div>
+            </div>
+            <div class="col access">
+                <div class="icon-container">
+                    <i class="fas fa-leaf" id="icons"></i>
+                </div>
+                <div class="icon-title">
+                    <p class="icon-header">Help the planet</p>
+                    <p class="icon-body">Live lighter. Reduce waste.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid category">
+        <div class="container browse-cat">
+            <p class="cat-content">Browse our categories</p>
+        </div>
+        <div class="container-fluid item-list">
+            <div class="row item-container">
+                <div class="card item-box">
+                    <img src="{% static 'images/drone.jpg' %}" class="card-img-top item-img" alt="...">
+                    <div class="card-body item-body">
+                        <h5 class="card-title item-title">Electronics</h5>
+                    </div>
+                </div>
+
+                <div class="card item-box">
+                    <img src="{% static 'images/clothing.jpg' %}" class="card-img-top item-img" alt="...">
+                    <div class="card-body item-body">
+                        <h5 class="card-title item-title">Clothing</h5>
+                    </div>
+                </div>
+
+                <div class="card item-box">
+                    <img src="{% static 'images/party.jpg' %}" class="card-img-top item-img" alt="...">
+                    <div class="card-body item-body">
+                        <h5 class="card-title item-title">Party Supplies</h5>
+                    </div>
+                </div>
+
+                <div class="card item-box">
+                    <img src="{% static 'images/baby.jpg' %}" class="card-img-top item-img" alt="...">
+                    <div class="card-body item-body">
+                        <h5 class="card-title item-title">Baby Accessories</h5>
+                    </div>
+                </div>
+
+                <div class="card item-box">
+                    <img src="{% static 'images/bike.jpg' %}" class="card-img-top item-img" alt="...">
+                    <div class="card-body item-body">
+                        <h5 class="card-title item-title">Transportation</h5>
+                    </div>
+                </div>
+
+                <div class="card item-box">
+                    <img src="{% static 'images/living-space.jpg' %}" class="card-img-top item-img" alt="...">
+                    <div class="card-body item-body">
+                        <h5 class="card-title item-title">Living Space</h5>
+                    </div>
+                </div>
+
+                <div class="card item-box">
+                    <img src="{% static 'images/accessories.jpg' %}" class="card-img-top item-img" alt="...">
+                    <div class="card-body item-body">
+                        <h5 class="card-title item-title">Accessories</h5>
+                    </div>
+                </div>
+
+                <div class="card item-box">
+                    <img src="{% static 'images/pets.jpg' %}" class="card-img-top item-img" alt="...">
+                    <div class="card-body item-body">
+                        <h5 class="card-title item-title">Pets</h5>
+                    </div>
+                </div>
+            
+               <div class="card item-box">
+                    <img src="{% static 'images/instrument.jpg' %}" class="card-img-top item-img" alt="...">
+                    <div class="card-body item-body">
+                        <h5 class="card-title item-title">Instruments</h5>
+                    </div>
+                </div>
+
+                <div class="card item-box">
+                    <img src="{% static 'images/outdoor.jpg' %}" class="card-img-top item-img" alt="...">
+                    <div class="card-body item-body">
+                        <h5 class="card-title item-title">Outdoor Equipments</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock  %}

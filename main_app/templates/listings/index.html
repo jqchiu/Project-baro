@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    View Listings
+{% endblock  %}
+
+{% block content %}
+
+
+<div class="container-fluid index">
+    <div class="container index-header">
+        <p class="index-content">View Listings</p>
+    </div>
+
+        <div class="container-fluid index-list">
+            <div class="row index-container">
+            {% for listing in listings %}
+                <div class="card index-box">
+                    {% for photo in listing.photo_set.all %}
+                        {% if photo.is_main %}
+                            <img src="{{ photo.url }}" class="card-img-top item-img" alt="list-item">
+                        {% endif %}
+                    {% endfor %}
+                    <a href="{% url 'detail' listing.id %}">
+                        <div class="card-body index-body">
+                            <div class="index-inner">
+                                <h5 class="card-title index-title">{{ listing.name }}</h5>
+                                <p class="card-text index-location">{{ listing.location }}</p>
+                            </div>
+                            <div class="index-info">
+                                <div class="vl"></div>
+                                <p class="card-text index-text">${{ listing.price }}/day</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+</div>     
+
+{% endblock  %}

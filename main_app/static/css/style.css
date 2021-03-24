@@ -1,0 +1,724 @@
+body {
+    background: whitesmoke;
+}
+
+/* ----------------------------
+            Navbar
+-------------------------------*/
+
+#mainNav {
+    padding: 20px 60px;
+    background-color: #212529;
+    height: 70px
+}
+
+.navbar-brand img {
+    height: 42px;    
+    width: auto;
+}
+
+#navbarNav {
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    height: 70px;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+#nav-links {
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#nav-links:hover {
+    background: #279AF1;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+
+}
+
+/* ----------------------------
+          Home Page
+-------------------------------*/
+
+/* Right Column */
+
+.search {
+    height: 55vh;
+    width: auto;
+    background: #ABFAA9;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightColHeader{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.rightColSubHeader {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    /* margin-left: 10px; */
+    margin-bottom: 40px;
+}
+
+#searchBar {
+    width: 45%;
+    height: 60px;
+    border-radius: 2.25rem 0 0 2.25rem;
+    padding: 0.375rem 1.75rem;
+    border: 1px solid #212529;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.searchContent {
+    justify-content: center;
+}
+
+.searchBtn {
+    padding: 0.375rem 4.30rem;
+    border: 1px solid #212529;
+    border-radius: 0 2.25rem 2.25rem 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #212529;;
+}
+
+.searchBtn:hover {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    background: #279AF1;
+    color: white;
+    border: 1px solid 212529;
+}
+
+/*  Left Column */
+
+.images {
+    /* height: 50vh;
+    width: auto;
+    background: lightgray; */
+    padding: 0;
+}
+
+#carousel-images {
+    height: 55vh;
+    object-fit: cover;
+    background: rgb(206, 112, 112);
+}
+
+.carousel-item img {
+    height: 55vh;
+    object-fit: cover;
+    background: #777;
+}
+
+
+/*  Mid-Content */
+
+.mid-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.mid-content-header {
+font-family: 'Abril Fatface', cursive;
+font-size: 50px;
+}
+
+/* Icon Container */
+
+.iconContainer {
+    width: 90%;
+    padding-bottom: 100px;
+}
+
+.access {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: lightslategrey; */
+}
+
+#icons {
+    font-size: 90px;
+    color: #82D173;
+    padding: 0 50px;
+}
+
+.icon-header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 0;
+    margin-bottom: 0;
+    color: #279AF1;
+}
+
+.icon-body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+} 
+
+/*  Category  */
+
+.category {
+    height: 100%;
+    width: auto;
+    background: #ABFAA9;
+}
+
+.browse-cat {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.cat-content {
+font-family: 'Abril Fatface', cursive;
+font-size: 30px;
+}
+
+.item-list {
+    width: 90%;
+    padding-bottom: 140px;
+}
+
+.item-container {
+    display: flex;
+    justify-content: center;
+    --bs-gutter-x: 0;
+}
+
+.item-box {
+    width: 22rem; 
+    margin: 10px 10px;
+}
+
+.item-box:hover {
+    background: #279AF1;
+    color: whitesmoke;
+    box-shadow: 1px 1px 9px #279AF1;
+    cursor: pointer;
+}
+
+.item-img {
+    height: 240px;
+    width: auto;
+    object-fit: cover;
+}
+
+.item-body {
+    text-align: center;
+}
+
+.item-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+/* ----------------------------
+           Index Page
+-------------------------------*/
+
+.index {
+    height: 100%;
+    width: auto;
+    /* background: #ABFAA9; */
+    padding-bottom: 5rem;
+}
+
+.index-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.index-content {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+}
+
+.index-list {
+    width: 90%;
+}
+
+.index-container {
+    display: flex;
+    justify-content: center;
+    --bs-gutter-x: 0;
+}
+
+.index-box {
+    width: 30rem;
+    margin: 10px 10px;
+}
+
+.index-box:hover {
+    background: #ABFAA9;
+    box-shadow: 1px 1px 9px #ABFAA9;
+}
+
+.index-img {
+    height: 240px;
+    width: auto;
+    object-fit: cover;
+}
+
+.index-body {
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-title {
+    color: #212529;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #212529;
+}
+
+.index-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-location {
+    color: #212529;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* .vl {
+    border-left: 1.5px solid #212529;
+    height: 50px;
+    padding-right: 30px;
+} */
+
+.index-text {
+    color: #279AF1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* ----------------------------
+          Details Page
+-------------------------------*/
+
+.detail-container {
+    height: 55vh;
+    width: auto;
+    background: #ABFAA9;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailContent {
+    justify-content: center;
+}
+
+.rightColTitle{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 80px;
+    margin-bottom: -30px;
+}
+
+.rightColLocation {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    /* margin-left: 10px; */
+}
+
+.detail-btn {
+    display: flex;
+    margin-bottom: 12px;
+    margin-top: 40px;
+}
+
+.delete {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 7px 60px;
+    border: 1px solid #212529;
+    border-radius: 20px;
+    background: none;
+    color: #212529;
+    margin-right: 27px;
+}
+
+.Edit {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 7px 69px;
+    border: 1px solid #212529;
+    border-radius: 20px;
+    background: none;
+    color: #212529;
+}
+
+.upload {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 7px 51px;
+    border: 1px solid #212529;
+    border-radius: 20px;
+    background: none;
+    color: #212529;
+    margin-left: -100px;
+}
+
+.btn-primary:hover {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border: 1px solid #279AF1;
+    border-radius: 20px;
+    background: #279AF1;
+    color: whitesmoke;
+}
+
+/*  Left Column */
+
+.images {
+    /* height: 50vh;
+    width: auto;
+    background: lightgray; */
+    padding: 0;
+}
+
+/* #carousel-images {
+    height: 45vh;
+    object-fit: cover;
+    background: rgb(206, 112, 112);
+} */
+
+/* .carousel-two img{
+    height: 45vh;
+    object-fit: cover;
+    background: #777;
+} */
+
+.carouselPrev {
+    left: auto;
+    height: 300px;
+    margin-top: 230px;
+}
+
+/* ------------------------------
+    Description & Review Column
+---------------------------------*/
+
+.despcription-review {
+    width: 100%;
+}
+
+.des-content {
+    height: 465px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.des-cont {
+    width: 65%;
+}
+
+.descript {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #212529;
+}
+
+.descript-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #212529;
+    padding-bottom: 10px;
+}
+
+.des-price {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    /* padding-bottom: 30px; */
+    padding-top: 20px;
+}
+
+.price {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #279AF1;
+    font-size: 1.5rem;
+}
+
+/*  Review Section */
+
+.review-section {
+    height: 100%;
+    background: #ABFAA9;
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviewHeader {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px; 
+    padding-top: 42px;
+}
+
+.overflow-div {
+    margin:4px, 4px;  
+    height: 280px;
+    width: 90%; 
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    text-align:justify;
+    margin-bottom: 20px;
+}
+
+.review-cont {
+    padding-bottom: 20px;
+}
+
+.review-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.review-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #212529;
+}
+
+.rev-sat-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.review-sat {
+    display: flex;
+    flex-direction: row;
+}
+
+.review-body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #212529;
+    padding-right: 10px;
+}
+
+.reviewBody {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #279AF1;
+}
+
+.rev-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dt2 {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+#postReview {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 7px 69px;
+    border: 1px solid #212529;
+    border-radius: 20px;
+    background: none;
+    color: #212529;
+}
+
+#postReviewOne {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 7px 69px;
+    border: 1px solid #212529;
+    border-radius: 20px;
+    background: none;
+    color: #212529;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.postRevForm {
+    height: 580px;
+    width: 1000px;
+}
+
+.postARev {
+    margin-top: -60px;
+}
+
+.ReviewContainer {
+    margin-bottom: 60px;
+}
+
+/* ----------------------------
+             Add Page
+-------------------------------*/
+
+.form-cont {
+    height: 100%;
+    width: auto;
+    /* background: #ABFAA9; */
+    padding-bottom: 5rem;
+}
+
+.form-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.form-content {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #212529;
+    padding-bottom: 5px;
+}
+
+#div_id_name {
+    padding-bottom: 10px;
+}
+
+#div_id_location {
+    padding-bottom: 10px;
+}
+
+#div_id_description {
+    padding-bottom: 10px;
+}
+
+#div_id_price {
+    padding-bottom: 20px;
+}
+
+#formBtn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 7px 69px;
+    border: 1px solid #212529;
+    border-radius: 20px;
+    background: none;
+    color: #212529;
+}
+
+#formBtn:hover {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border: 1px solid #279AF1;
+    border-radius: 20px;
+    background: #279AF1;
+    color: whitesmoke;
+}
+
+/* ----------------------------
+        Edit Page / Review
+-------------------------------*/
+
+#div_id_satisfaction {
+    padding-bottom: 20px;
+}
+
+/* ----------------------------
+        Log-in Page
+-------------------------------*/
+
+#div_id_username {
+    padding-bottom: 20px;
+}
+
+#div_id_password {
+    padding-bottom: 20px;
+}
+
+/* ----------------------------
+        Sign Up Page
+-------------------------------*/
+
+#div_id_username {
+    padding-bottom: 20px;
+}
+
+#div_id_password1 {
+    padding-bottom: 20px;
+}
+
+#div_id_password2 {
+    padding-bottom: 20px;
+}
+
+/* ----------------------------
+            Footer
+-------------------------------*/
+
+#footer-content {
+    justify-content: center;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.footer {
+    background-color: #212529;
+}

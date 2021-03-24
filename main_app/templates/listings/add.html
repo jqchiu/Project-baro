@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{%load crispy_forms_tags %} 
+
+{% block title %}
+    List an Item
+{% endblock  %}
+
+{% block content %}
+
+<div class="container form-cont">
+    <div class="container form-header">
+        <p class="form-content">List an Item for Rent</p>
+    </div>
+
+    <div class="form-info">
+        <form action="{% url 'list_an_item' %}" method="POST">
+        {% csrf_token %}
+        {{ listing_form|crispy }}
+            <input type="submit" class="btn btn-primary" id="formBtn" value="List your Item">
+        </form>
+    </div>
+</div>  
+
+
+
+
+{% endblock %}

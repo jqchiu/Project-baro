@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{%load crispy_forms_tags %} 
+
+{% block title %}
+    Edit Review
+{% endblock  %}
+
+{% block content %}
+
+
+    <div class="container form-cont">
+        <div class="container form-header">
+            <p class="form-content">Edit {{ review.name }}'s Review</p>
+        </div>
+
+        <div class="form-info">
+            <form method="POST">
+            {% csrf_token %}
+            {{ form|crispy }}
+                <input type="submit" class="btn btn-primary" id="formBtn" value="Update Review">
+            </form>
+        </div>
+    </div>  
+
+{% endblock content %}
